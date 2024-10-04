@@ -1,0 +1,76 @@
+/*common_styles_for whole_body*/
+.page {
+  min-width: 320px;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+  position: relative;
+}
+
+.page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 600px;
+  background-image: url(../../assets/maya-bay\ 5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+:root {
+  --main-color: #fff;
+  --accent-color: #F4C542;
+  --block-color-one:#E6F7FF;
+  --block-color-two:#F5F5F5;
+}
+
+/*/common_styles_for whole_body*/
+.caps {
+  text-transform: capitalize;
+}
+
+/*common "spans" styles*/
+
+/*# sourceMappingURL=common.css.map */
