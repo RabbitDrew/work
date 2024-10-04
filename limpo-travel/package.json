@@ -1,0 +1,37 @@
+{
+  "name": "limpo-travel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "build-dev": "cross-env NODE_ENV=development webpack --config webpack.config.js",
+    "build-prod": "cross-env NODE_ENV=production webpack --config webpack.config.js",
+    "watch:build": "cross-env NODE_ENV=development webpack --watch --config webpack.config.js",
+    "sass": "sass --watch src:src",
+    "watch:serv": "webpack serve --open",
+  "dev": "concurrently \"npm run watch:build\" \"npm run watch:serv\" \"npm run sass\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "work"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.25.7",
+    "@babel/preset-env": "^7.25.7",
+    "babel-loader": "^9.2.1",
+    "concurrently": "^9.0.1",
+    "copy-webpack-plugin": "^12.0.2",
+    "cross-env": "^7.0.3",
+    "css-loader": "^7.1.2",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.0",
+    "sass": "^1.79.4",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  }
+}
