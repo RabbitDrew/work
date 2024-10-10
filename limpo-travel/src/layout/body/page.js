@@ -1,2 +1,5 @@
-const page = document.getElementsByTagName('body')
-page.classList.add('page')
+import './common.css'
+const page = document.querySelector('body')
+page.className = 'page'
+
+export default page

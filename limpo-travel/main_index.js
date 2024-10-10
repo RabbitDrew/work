@@ -1,1 +1,3 @@
-import "./src/layout/body/common.css"
+/*layouts*/
+import './src/layout/body/page.js'
+import "./src/layout/header/header.js"
