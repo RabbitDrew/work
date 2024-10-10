@@ -31,10 +31,10 @@
     width: 100%;
     height: 600px;
     background-image: url(../../assets/maya-bay\ 5.jpg);
-
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
+    filter: brightness(75%);
   }
 
   * {
@@ -67,9 +67,15 @@
     --main-color: #fff;
     --accent-color: #F4C542;
     --block-color-one:#E6F7FF; 
-    --block-color-two:#F5F5F5;
+    --block-color-two:#F5F5F5; 
+    
+    --title-font: "Open Sans", sans-serif;
+    --main-font: "Lato", sans-serif;
+    
+    --font-size-subtitle:20px;
+    --font-size-main:15px;
+    --font-saiz-title: 28px;
   }
-  
   /*/common_styles_for whole_body*/
   .caps {
     text-transform: capitalize;
