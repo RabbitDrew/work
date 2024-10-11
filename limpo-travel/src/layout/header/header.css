@@ -20,7 +20,8 @@
 
 /*contacts*/
 /*addres, phone*/
-.contacts-addreses__wrapper, .contacts-phones__wrapper {
+.contacts-addreses__wrapper,
+.contacts-phones__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,7 +29,8 @@
   gap: 5px;
 }
 
-.addreses-item, .phones-item {
+.addreses-item,
+.phones-item {
   display: flex;
   justify-content: center;
   align-items: start;
@@ -36,7 +38,8 @@
   cursor: pointer;
 }
 
-.addres, .phone {
+.addres,
+.phone {
   font-size: var(--font-size-main);
   font-family: var(--main-font);
   letter-spacing: 1px;
@@ -68,12 +71,24 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.call-back__btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .call-back-title {
   font-size: 13px;
   font-family: var(--main-font);
+  letter-spacing: 1px;
+  font-weight: 400;
   color: #e3e3e3;
+  transition: color 0.3s ease;
+}
+
+.call-back__btn:hover .call-back-title {
+  color: #fff;
 }
 
 /*nav block*/
@@ -92,6 +107,10 @@
   gap: 10px;
 }
 
+.nav-item {
+  cursor: pointer;
+}
+
 .item-title {
   font-size: var(--font-size-main);
   font-family: var(--main-font);
@@ -99,6 +118,11 @@
   letter-spacing: 1px;
   color: #e3e3e3;
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover .item-title {
+  color: #fff;
 }
 
 /*# sourceMappingURL=header.css.map */
