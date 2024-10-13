@@ -20,7 +20,8 @@
 
 /*contacts*/
 /*addres, phone*/
-.contacts-addreses__wrapper, .contacts-phones__wrapper {
+.contacts-addreses__wrapper,
+.contacts-phones__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,7 +29,8 @@
   gap: 5px;
 }
 
-.addreses-item, .phones-item {
+.addreses-item,
+.phones-item {
   display: flex;
   justify-content: center;
   align-items: start;
@@ -36,11 +38,12 @@
   cursor: pointer;
 }
 
-.addres, .phone {
+.addres,
+.phone {
   font-size: var(--font-size-main);
   font-family: var(--main-font);
   letter-spacing: 1px;
-  color: #e3e3e3;
+  color: var(--header-font-ciolor);
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -56,24 +59,35 @@
 .phones-call__back {
   height: 100%;
   display: flex;
-  justify-content: center;
   align-items: end;
 }
 
 .call-back__btn {
   padding: 5px;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(130, 130, 130, 0.5);
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.call-back__btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .call-back-title {
   font-size: 13px;
   font-family: var(--main-font);
-  color: #e3e3e3;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: var(--header-font-ciolor);
+  transition: color 0.3s ease;
+}
+
+.call-back__btn:hover .call-back-title {
+  color: #fff;
 }
 
 /*nav block*/
@@ -92,13 +106,24 @@
   gap: 10px;
 }
 
+.nav-item {
+  cursor: pointer;
+  position: relative;
+  padding: 5px;
+}
+
 .item-title {
   font-size: var(--font-size-main);
   font-family: var(--main-font);
   font-weight: 400;
   letter-spacing: 1px;
-  color: #e3e3e3;
+  color: var(--header-font-ciolor);
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover .item-title {
+  color: #fff;
 }
 
 /*# sourceMappingURL=header.css.map */
