@@ -1,4 +1,6 @@
 import "./header.css";
+import "./header_dropdowns.css";
+import mouseMoveHandler from "./header_dropdown.js";
 import elementCreator from "../../global/create_el";
 import elementRendering from "../../global/render_el";
 import page from "../body/page";
@@ -13,7 +15,7 @@ const headerElementsData = {
     "г. Речица, ул. Советская, 134а",
   ],
   phoneLinks: ["tel:+375293566774", "tel:+375333586774"],
-  phoneTitles: ["+375 29 356-67-74", "+375 33 358-67-74"],
+  phoneTitles: ["+375 29 359-67-74", "+375 33 358-67-74"],
 
   navTitles: [
     "Страны",
@@ -223,3 +225,5 @@ const header = function () {
 };
 
 header();
+
+mouseMoveHandler ()

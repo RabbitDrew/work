@@ -43,7 +43,7 @@
   font-size: var(--font-size-main);
   font-family: var(--main-font);
   letter-spacing: 1px;
-  color: #e3e3e3;
+  color: var(--header-font-ciolor);
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -59,13 +59,12 @@
 .phones-call__back {
   height: 100%;
   display: flex;
-  justify-content: center;
   align-items: end;
 }
 
 .call-back__btn {
   padding: 5px;
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(130, 130, 130, 0.5);
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -83,7 +82,7 @@
   font-family: var(--main-font);
   letter-spacing: 1px;
   font-weight: 400;
-  color: #e3e3e3;
+  color: var(--header-font-ciolor);
   transition: color 0.3s ease;
 }
 
@@ -109,6 +108,8 @@
 
 .nav-item {
   cursor: pointer;
+  position: relative;
+  padding: 5px;
 }
 
 .item-title {
@@ -116,7 +117,7 @@
   font-family: var(--main-font);
   font-weight: 400;
   letter-spacing: 1px;
-  color: #e3e3e3;
+  color: var(--header-font-ciolor);
   text-decoration: none;
   transition: color 0.3s ease;
 }
