@@ -29,7 +29,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: brightness(75%);
+  filter: brightness(70%);
 }
 
 * {
@@ -61,11 +61,12 @@ li {
 }
 
 :root {
-  --main-color: #fff;
+  --main-color: #efefef;
   --accent-color: #F4C542;
   --block-color-one:#E6F7FF;
   --block-color-two:#F5F5F5;
-  --header-font-ciolor: #e3e3e3;
+  --header-font-ciolor: #efefef;
+  --intro-title-color: #e3e3e3;
   --title-font: "Open Sans", sans-serif;
   --main-font: "Lato", sans-serif;
   --font-size-subtitle:20px;
@@ -79,5 +80,13 @@ li {
 }
 
 /*common "spans" styles*/
+.page-main {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 
 /*# sourceMappingURL=common.css.map */
