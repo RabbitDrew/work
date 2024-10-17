@@ -1,0 +1,64 @@
+.main-intro {
+  max-width: 1440px;
+  min-width: 320px;
+  width: 100%;
+  height: 470px;
+  padding: 50px 40px 0 40px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.intro__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 5px;
+  padding-left: 20px;
+}
+
+.intro-title__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 10px;
+  animation: appear 1s ease;
+}
+.intro-title__wrapper .intro-title__agency {
+  font-size: 28px;
+  font-family: var(--title-font);
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--intro-title-color);
+  font-style: normal;
+}
+.intro-title__wrapper .intro-title {
+  font-size: 38px;
+  font-family: var(--title-font);
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--intro-title-color);
+  font-style: normal;
+}
+
+.intro-subtitle {
+  font-size: 28px;
+  font-family: var(--title-font);
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: var(--intro-title-color);
+  font-style: normal;
+  animation: appear 1.5s ease;
+}
+
+@keyframes appear {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/*# sourceMappingURL=intro.css.map */

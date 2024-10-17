@@ -28,28 +28,52 @@
   align-items: start;
   gap: 5px;
 }
-
-.addreses-item,
-.phones-item {
+.contacts-addreses__wrapper .addreses-item,
+.contacts-addreses__wrapper .phones-item,
+.contacts-phones__wrapper .addreses-item,
+.contacts-phones__wrapper .phones-item {
   display: flex;
   justify-content: center;
   align-items: start;
   gap: 5px;
   cursor: pointer;
 }
-
-.addres,
-.phone {
+.contacts-addreses__wrapper .addreses-item .icon,
+.contacts-addreses__wrapper .phones-item .icon,
+.contacts-phones__wrapper .addreses-item .icon,
+.contacts-phones__wrapper .phones-item .icon {
+  fill: #dedede;
+  transition: all 0.3s ease-in-out;
+}
+.contacts-addreses__wrapper .addreses-item .addres,
+.contacts-addreses__wrapper .addreses-item .phone,
+.contacts-addreses__wrapper .phones-item .addres,
+.contacts-addreses__wrapper .phones-item .phone,
+.contacts-phones__wrapper .addreses-item .addres,
+.contacts-phones__wrapper .addreses-item .phone,
+.contacts-phones__wrapper .phones-item .addres,
+.contacts-phones__wrapper .phones-item .phone {
   font-size: var(--font-size-main);
   font-family: var(--main-font);
   letter-spacing: 1px;
-  color: var(--header-font-ciolor);
+  color: var(--header-font-color);
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease-in-out;
+}
+
+/*hover effects*/
+.addreses-item:hover .icon path {
+  fill: #fff;
+  transition: all 0.3s ease-in-out;
 }
 
 .addreses-item:hover .addres {
   color: #fff;
+}
+
+.phones-item:hover .icon path {
+  fill: #fff;
+  transition: all 0.3s ease-in-out;
 }
 
 .phones-item:hover .phone {
@@ -61,33 +85,31 @@
   display: flex;
   align-items: end;
 }
-
-.call-back__btn {
+.phones-call__back .call-back__btn {
   padding: 5px;
-  background-color: rgba(130, 130, 130, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease-in-out;
 }
-
-.call-back__btn:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.call-back-title {
+.phones-call__back .call-back__btn .call-back-title {
   font-size: 13px;
   font-family: var(--main-font);
   letter-spacing: 1px;
   font-weight: 400;
-  color: var(--header-font-ciolor);
-  transition: color 0.3s ease;
+  color: var(--header-font-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.call-back__btn:hover {
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .call-back__btn:hover .call-back-title {
-  color: #fff;
+  color: #ffffff;
 }
 
 /*nav block*/
@@ -105,23 +127,22 @@
   align-items: center;
   gap: 10px;
 }
-
-.nav-item {
+.header-nav .nav-item {
   cursor: pointer;
   position: relative;
   padding: 5px;
 }
-
-.item-title {
-  font-size: var(--font-size-main);
+.header-nav .nav-item .item-title {
+  font-size: 17px; /*?????*/
   font-family: var(--main-font);
   font-weight: 400;
   letter-spacing: 1px;
-  color: var(--header-font-ciolor);
+  color: var(--header-font-color);
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease-in-out;
 }
 
+/*hover effects*/
 .nav-item:hover .item-title {
   color: #fff;
 }
