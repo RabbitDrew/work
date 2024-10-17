@@ -12,5 +12,4 @@ const mainBlock = function () {
   const titleSection = createTitleSection()
   elementRendering(main, titleSection)
 };
-
 //mainBlock();

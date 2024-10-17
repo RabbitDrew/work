@@ -97,7 +97,7 @@ const createSvgAddres = () => {
     "http://www.w3.org/2000/svg",
     "path"
   );
-  elementPath.setAttribute("fill", "#e3e3e3");
+  elementPath.setAttribute("fill", "#E0F0FF");
   elementPath.setAttribute("fill-rule", "evenodd");
   elementPath.setAttribute(
     "d",
@@ -124,7 +124,7 @@ const createSvgPhone = () => {
     "transform",
     "translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
   );
-  elementG.setAttribute("fill", "#e3e3e3");
+  elementG.setAttribute("fill", "#E0F0FF");
   elementG.setAttribute("stroke", "none");
   const pathData = [
     "M3045 12782 c-27 -10 -230 -122 -450 -248 -220 -127 -506 -291 -635 -364 -301 -171 -350 -219 -382 -374 -23 -106 -15 -124 273 -615 480 -820 1464 -2453 1505 -2500 54 -59 132 -106 213 -127 113 -28 117 -27 650 279 262 151 553 318 648 371 236 134 298 204 325 370 21 129 12 151 -211 521 -1045 1729 -1554 2566 -1580 2597 -73 87 -245 131 -356 90z",

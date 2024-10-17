@@ -14,8 +14,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--main-color);
+  background-color: #fff;
   position: relative;
+}
+.page .page-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .page::before {
@@ -25,7 +32,7 @@
   z-index: -1;
   width: 100%;
   height: 600px;
-  background-image: url(../../assets/main_img/bg-portugal-lisbon.png);
+  background-image: url(../../assets/main_img/montenegro2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -61,32 +68,18 @@ li {
 }
 
 :root {
-  --main-color: #efefef;
-  --accent-color: #F4C542;
-  --block-color-one:#E6F7FF;
-  --block-color-two:#F5F5F5;
-  --header-font-ciolor: #efefef;
-  --intro-title-color: #e3e3e3;
+  /*font - colors*/
+  --main-color: #dedede;
+  --accent-color: #a68d7e;
+  /*#ffd296*/
+  --header-font-color: #dedede;
+  --intro-title-color: #ffffff;
+  --form-title-color: #4B4E51;
   --title-font: "Open Sans", sans-serif;
   --main-font: "Lato", sans-serif;
   --font-size-subtitle:20px;
   --font-size-main:15px;
   --font-saiz-title: 28px;
-}
-
-/*/common_styles_for whole_body*/
-.caps {
-  text-transform: capitalize;
-}
-
-/*common "spans" styles*/
-.page-main {
-  max-width: 1440px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
 }
 
 /*# sourceMappingURL=common.css.map */

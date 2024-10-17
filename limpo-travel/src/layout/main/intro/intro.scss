@@ -1,9 +1,11 @@
 .main-intro {
+    max-width: 1440px;
+    min-width: 320px;
     width: 100%;
 
     height: 470px;
 
-    padding: 70px 40px 0 40px;
+    padding: 50px 40px 0 40px;
 
     display: flex;
     justify-content: start;
@@ -17,6 +19,8 @@
     justify-content: center;
     align-items: start;
     gap: 5px;
+
+    padding-left: 20px;
 }
 
 .intro-title__wrapper {
@@ -25,32 +29,48 @@
     align-items: end;
 
     gap: 10px;
+
+    animation: appear 1s ease;
+    .intro-title__agency {
+        font-size: 28px;
+        font-family: var(--title-font);
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: var(--intro-title-color);
+        font-style: normal;
+    }
+    
+    .intro-title {
+        font-size: 38px;
+        font-family: var(--title-font);
+        font-weight: 600;
+        letter-spacing: 1px;
+        color:var(--intro-title-color);
+        font-style: normal;
+    }
 }
 
-.intro-title__agency {
-    font-size: 26px;
-    font-family: var(--title-font);
-    font-weight: 400;
-    letter-spacing: 1px;
-    color: var(--accent-color);
-    font-style: normal;
-}
 
-.intro-title {
-    font-size: 36px;
-    font-family: var(--title-font);
-    font-weight: 400;
-    letter-spacing: 1px;
-    color:#85C1E9;
-    font-style: normal;
-}
+
 
 
 .intro-subtitle {
-    font-size: 26px;
+    font-size: 28px;
     font-family: var(--title-font);
     font-weight: 400;
     letter-spacing: 1px;
-    color: var(--main-color);
+    color:var(--intro-title-color);
     font-style: normal;
+
+    animation: appear 1.5s ease;
+}
+
+
+@keyframes appear {
+    0% {
+        transform: translateX(-150%);
+    }
+    100% {
+        transform: translateX(0%); 
+    }
 }
