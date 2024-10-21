@@ -19,8 +19,9 @@
       rel="stylesheet"
     />
     <title>limpo-tur</title>
-  <script defer src="%5Bmain%5D.4eddebabea8d919db7e5.js"></script></head>
+  <script defer src="%5Bmain%5D.f7a4399627c37ea2d083.js"></script></head>
   <body>
+    <!--
     <header class="page-header">
       <section class="header-contacts">
         <ul class="contacts-addreses__wrapper">
@@ -228,7 +229,6 @@
       </section>
 
       <section class="main-form">
-
         <div class="form__wrapper">
           <div class="form-title__wrapper">
             <h2 class="form-title">Хотите подобрать тур?</h2>
@@ -238,85 +238,203 @@
           <div class="form-inputs__wrapper">
             <div class="inputs-row">
               <div class="row-input__Wrapper">
-                <label for="country">Страна отдыха<span class="obligatorily-field">*</span></label>
-                <input class="input-field" id="country" type="text" />
+                <label for="country">Страна отдыха:<span class="obligatory-field">*</span></label>
+                <input class="input-field" id="country" type="text" placeholder="Выбрать страну" readonly/>
+              
+                 <ul class="input-options input-option--open country">
+                    <li class="option">
+                       <h2 class="option-title">Болгария</h2>
+                    </li>
+                    
+                    <li class="option">
+                      <h2 class="option-title">Греция</h2>
+                    </li>
+
+                    <li class="option">
+                      <h2 class="option-title">Египет</h2>
+                    </li>
+
+                    <li class="option">
+                      <h2 class="option-title">Испания</h2>
+                    </li>
+
+                    <li class="option">
+                      <h2 class="option-title">Кипр</h2>
+                    </li>
+
+                    <li class="option">
+                      <h2 class="option-title">ОАЭ</h2>
+                    </li>
+
+                    <li class="option">
+                      <h2 class="option-title">Тунис</h2>
+                    </li>
+
+                    <li class="option">
+                      <h2 class="option-title">Турция</h2>
+                    </li>
+                 </ul>
+                       
               </div>
 
               <div class="row-input__Wrapper">
                 <label for="departure">Вылет из:</label>
-                <input class="input-field" id="departure" type="text" />
+                <input class="input-field" id="departure" type="text"  placeholder="Выбрать город вылета" autocomplete="off"/>
+                 
+                 <ul class="input-options departure">
+                    <li class="option">
+                        <h2 class="option-title">Минск</h2>
+                    </li>
+                    
+                    <li class="option">
+                      <h2 class="option-title">Киев</h2>
+                    </li>
+
+                    <li class="option">
+                      <h2 class="option-title">Гомель</h2>
+                    </li>
+
+                    <li class="option">
+                      <h2 class="option-title">Москва</h2>
+                    </li>
+                 </ul>
+              </div>
+
+
+              <div class="row-input__Wrapper">
+                <label for="departure-time">Вылет c:<span class="obligatory-field">*</span></label>
+                <input class="input-field" id="departure-time" type="text" placeholder="Выбрать дату вылета"/>
               </div>
 
               <div class="row-input__Wrapper">
-                <label for="departure-time">Вылет<span class="obligatorily-field">*</span>с:</label>
-                <input class="input-field" id="hotel" type="text" />
+                <label for="days">Дней отдыха:<span class="obligatory-field">*</span></label>
+                <input class="input-field" id="days" type="text" placeholder="Укажите кол-во дней отдыха" autocomplete="off"/>
               </div>
             </div>
 
             <div class="inputs-row">
+
+
               <div class="row-input__Wrapper">
-                <label for="days">Дней отдыха<span class="obligatorily-field">*</span>:</label>
-                <input class="input-field" id="days" type="text" />
+                <label for="adults">Количество взрослых:<span class="obligatory-field">*</span></label>
+                <input class="input-field" id="adults" type="text" placeholder="Укажите кол-во взрослых" autocomplete="off"/>
               </div>
 
               <div class="row-input__Wrapper">
-                <label for="adults">Количество взрослых<span class="obligatorily-field">*</span>:</label>
-                <input class="input-field" id="adults" type="text" />
+                <label class="input-label" for="children">Количество детей:</label>
+                <input class="input-field" id="children" type="text" placeholder="Укажите кол-во детей" autocomplete="off"/>
               </div>
 
               <div class="row-input__Wrapper">
-                <label for="children">Количество детей</label>
-                <input class="input-field" id="children" type="text" />
+                <label class="input-label" input-labelfor="category">Категория отеля:</label>
+                <input class="input-field" id="category" type="text" placeholder="Выберете категорию отеля"/>
+              
+                
+                <ul class="input-options food">
+
+                  <li class="option">
+                     <h2 class="option-title">2-ух звёздочный отель</h2>
+                  </li>
+                  
+                  <li class="option">
+                    <h2 class="option-title">3-ёх звёздочный отель</h2>
+                  </li>
+
+                  <li class="option">
+                    <h2 class="option-title">4-ёх звёздочный отель</h2>
+                  </li>
+
+                  <li class="option">
+                    <h2 class="option-title">5-и звёздочный отель</h2>
+                  </li>
+
+               </ul>
+               
+         
               </div>
               
+
+              <div class="row-input__Wrapper">
+                <label class="input-label" for="food">Питание:</label>
+                <input class="input-field" id="food" type="text" placeholder="Выберите тип питания"/>
+             
+                <ul class="input-options food">
+                  <li class="option">
+                     <h2 class="option-title">Всё включено</h2>
+                  </li>
+                  
+                  <li class="option">
+                    <h2 class="option-title">Завтрак и ужин</h2>
+                  </li>
+
+                  <li class="option">
+                    <h2 class="option-title">Только завтрак</h2>
+                  </li>
+
+                  <li class="option">
+                    <h2 class="option-title">Без питания</h2>
+                  </li>
+
+                  <li class="option">
+                    <h2 class="option-title">Завтрак, обед и ужин</h2>
+                  </li>
+               </ul>
+           
+              </div>
             </div>
+
+
             <div class="inputs-row">
               <div class="row-input__Wrapper">
-                <label for="category">Категория отеля</label>
-                <input class="input-field" id="category" type="text" />
+                <label class="input-label" for="name">Ваше имя:<span class="obligatory-field">*</span></label>
+                <input class="input-field" id="name" type="text" placeholder="Укажите Ваше имя" autocomplete="off"/>
               </div>
 
               <div class="row-input__Wrapper">
-                <label for="food">Питание</label>
-                <input class="input-field" id="food" type="text" />
+                <label class="input-label" for="email">Ваш e-mail:</label>
+                <input class="input-field" id="email" type="text" placeholder="Укажите Ваш e-mail" autocomplete="off"/>
               </div>
 
               <div class="row-input__Wrapper">
-                <label for="name">Ваше имя<span class="obligatorily-field">*</span>:</label>
-                <input class="input-field" id="name" type="text" />
+                <label class="input-label" for="phone">Ваш телефон:</label>
+                <input class="input-field" id="phone" type="text" placeholder="Укажите Ваш телефон" autocomplete="off"/>
               </div>
-            </div>
-
-            <div class="inputs-row">
-              <div class="row-input__Wrapper">
-                <label for="email">Ваш e-mail</label>
-                <input class="input-field" id="email" type="text" />
-              </div>
-
-              <div class="row-input__Wrapper">
-                <label for="phone">Ваш телефон</label>
-                <input class="input-field" id="phone" type="text" />
-              </div>
-
+              
+              
               <div class="input-btn__wrapper">
-                <div class="input-btn">
+                <div  class="input-btn">
                   <h2 class="input-btn-title">Отправить</h2>
                 </div>
               </div>
+              
             </div>
-          </div>
 
-          <div class="input-warning__wrapper">
-            <h2 class="warning-important-title"></h2>
-            <p class="warning-description">
-              Опишите Ваши пожелания по туру и мы быстро подберем для Вас самые лучшие предложения. 
-              Мы используем самые современные системы поиска и бронирования туров, и работаем с туроператорами напрямую. Поэтому мы знаем где и как найти для Вас самые лучшие цены.
-            </p>
+
+            <div class="input-warning__wrapper">
+
+              <div class="warning-important-title__wrapper">
+                 <h2 class="warning-important-title">*</h2>
+                <h2 class="warning-important-title"> - Поля, обязательные для заполнения</h2>
+              </div>
+             
+              <p class="warning-description">
+                Опишите Ваши пожелания по туру и мы быстро подберем для Вас самые лучшие предложения. 
+                Мы используем самые современные системы поиска и бронирования туров, и работаем с туроператорами напрямую. Поэтому мы знаем где и как найти для Вас самые лучшие цены.
+              </p>
+              
+            </div>
+
           </div>
         </div>
+
+        
       </section>
 
-      <section class="main-news"></section>
+      <section class="main-special-offers">
+
+      </section>
     </main>
+
+  -->
   </body>
 </html>

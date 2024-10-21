@@ -224,5 +224,5 @@ const header = function () {
   elementRendering(page, headerSection);
 };
 
-//header();
-//mouseMoveHandler ()
+header();
+mouseMoveHandler ()

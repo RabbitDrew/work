@@ -70,11 +70,12 @@ li {
 :root {
   /*font - colors*/
   --main-color: #dedede;
-  --accent-color: #a68d7e;
+  --accent-color: #fdd99a;
   /*#ffd296*/
   --header-font-color: #dedede;
   --intro-title-color: #ffffff;
-  --form-title-color: #4B4E51;
+  --form-font-color: #4f575f;
+  --form-inputs-bg-color:#cbf7fb;
   --title-font: "Open Sans", sans-serif;
   --main-font: "Lato", sans-serif;
   --font-size-subtitle:20px;
