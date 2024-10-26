@@ -17,7 +17,6 @@ const dataFormListContent = {
         'Ваш e-mail:',
         'Ваш телефон:',
     ],
-
     inputPlaceholder: [
         'Выбрать страну',
         'Выбрать место вылета',
@@ -31,7 +30,6 @@ const dataFormListContent = {
         'Укажите Ваш e-mail',
         'Укажите Ваш телефон'
     ], 
-   
     inputId: [
         'country',
         'departure',
@@ -95,7 +93,8 @@ const createFormInputsWrapper = () => { //create main wrapper for rows and backg
         elementRendering (formInputsWrapper, row)
     })
     //warning block
-
+    const warningWrapper = creatWarningWrapper()
+    elementRendering (formInputsWrapper, warningWrapper)
     return formInputsWrapper
 }
 // create rows
@@ -142,7 +141,15 @@ const createLabels = () => {
         createLabelElement.htmlFor = dataFormListContent.inputId[i]; 
         labels.push(createLabelElement); 
     });
-
+    //add start to hilited important tips 
+    const labelIndexes = [0, 2, 3, 4, 8, 10]
+    labels.forEach((label, i) => {
+        if (labelIndexes.includes(i)){
+            const createSpanEl = elementCreator ('span', 'obligatory-field')
+            createSpanEl.textContent ='*'
+            elementRendering(label, createSpanEl)
+        }
+    })
     return labels; 
 }
 
@@ -155,7 +162,17 @@ const createInputs = () => {
               createInputElement.autocomplete = 'off'
         inputs.push(createInputElement)
     })
+    //add readonly attribute to some inputs
+    const readonlyIndexes = [0, 1, 2, 6, 7];
+    inputs.forEach((input, i) => {
+        if (readonlyIndexes.includes(i)) {
+            input.readOnly = true; 
+        }
 
+        if (i === 10) {
+            input.placeholder = '+375 (__) ___-__-__'
+        }
+    })
     return inputs
 }
 //submit btn  
@@ -180,9 +197,45 @@ const createBtnTitle = () => {
 //warining block
 const creatWarningWrapper = () => {
     const wariningWrapper = elementCreator('div', 'input-warning__wrapper')
-    
-
+    const warningImportantTitleWrapper = createWarningImportantTitleWrapper ()
+    elementRendering(wariningWrapper, warningImportantTitleWrapper)
+    const description = createDescriptionWrapper ()
+    elementRendering (wariningWrapper, description)
+        
     return wariningWrapper
 }
+// title block
+const createWarningImportantTitleWrapper = () => {
+    const warningInmortantWrapper = elementCreator('div', 'warning-important-title__wrapper')
+    const warnongImportantSighn = createWarningImportantSign ()
+    elementRendering (warningInmortantWrapper, warnongImportantSighn)
+    const warningTitle = createWarningImportan ()
+    elementRendering (warningInmortantWrapper, warningTitle)
+    return warningInmortantWrapper 
+}
+
+
+const createWarningImportantSign = () => {
+    const element = elementCreator('h2', 'warning-important-title')
+    element.textContent = '*'
+    return element
+}
+
+const createWarningImportan = () => {
+    const element = elementCreator ('h2', 'warning-important-title')
+    element.textContent = '- Поля, обязательные для заполнения'
+    return element
+}
+//description block
+const createDescriptionWrapper = () => {
+    const element = elementCreator ('p', 'warning-descriptio')
+    element.textContent = `Опишите Ваши пожелания по туру и мы быстро подберем для Вас самые лучшие предложения. 
+    Мы используем самые современные системы поиска и бронирования туров, и работаем с туроператорами напрямую. 
+    Поэтому мы знаем где и как найти для Вас самые лучшие цены.`
+    return element
+}
+
+
+
 export default createFormSection
 

@@ -44,7 +44,7 @@
 
 /*for-block*/
 .form-inputs__wrapper {
-  max-width: 780px;
+  max-width: 870px;
   min-width: 320px;
   width: 100%;
   display: flex;
@@ -64,9 +64,10 @@
   gap: 5px;
 }
 .form-inputs__wrapper .inputs-row .row-input__wrapper {
+  height: 60px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
   align-items: start;
   gap: 5px;
   position: relative;
@@ -74,7 +75,7 @@
 .form-inputs__wrapper .inputs-row .row-input__wrapper .input-label {
   font-size: 15px;
   font-family: var(--main-font);
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 0.5px;
   color: var(--form-font-color);
 }
@@ -84,7 +85,7 @@
   color: #dd0101;
 }
 .form-inputs__wrapper .inputs-row .row-input__wrapper .input-field {
-  width: 180px;
+  width: 200px;
   height: 30px;
   border: none;
   outline: none;
@@ -94,8 +95,8 @@
 }
 
 .input-btn__wrapper {
-  width: 180px;
-  height: 52px;
+  width: 200px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -115,7 +116,7 @@
   font-size: var(--font-size-main);
   font-family: var(--main-font);
   font-weight: 400;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   color: var(--form-title-color);
 }
 .input-btn__wrapper .input-btn:hover {
@@ -129,6 +130,7 @@
   justify-content: center;
   align-items: start;
   gap: 10px;
+  padding: 0 10px 0 10px;
 }
 .input-warning__wrapper .warning-important-title__wrapper {
   display: flex;

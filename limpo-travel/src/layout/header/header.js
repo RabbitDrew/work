@@ -1,6 +1,6 @@
 import "./header.css";
 import "./header_dropdowns.css";
-import mouseMoveHandler from "../../dynemic/toggle-dropdowns.js";
+import mouseMoveHandler from "../../dynemic/header/toggle-dropdowns";
 import elementCreator from "../../global/create_el";
 import elementRendering from "../../global/render_el";
 import page from "../body/page";
