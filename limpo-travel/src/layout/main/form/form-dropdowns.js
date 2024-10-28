@@ -2,8 +2,8 @@ import './form-dropdowns.css'
 import elementCreator from "../../../global/create_el";
 import elementRendering from "../../../global/render_el";
 
-const createInputOptionsWrapper = (arrOfOptions, subClasses) => {
-  const dropDownOptionsWrapper = createElement("ul",`input-options ${subClasses}`);
+const createInputOptionsWrapper = (arrOfOptions) => {
+  const dropDownOptionsWrapper = elementCreator("ul", "input-options");
   arrOfOptions = createInputOptions(arrOfOptions);
   arrOfOptions.forEach((option) => {
     elementRendering(dropDownOptionsWrapper, option);
