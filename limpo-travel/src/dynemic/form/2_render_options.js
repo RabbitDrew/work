@@ -1,6 +1,4 @@
 import createInputOptionsWrapper from "../../layout/main/form/form-dropdowns"
-import elementRendering from "../../global/render_el"
-
 
 //data for inputs
 const optionsData = {
