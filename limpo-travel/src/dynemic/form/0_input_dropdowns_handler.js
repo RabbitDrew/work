@@ -1,19 +1,29 @@
-
 import toggleInputOptionsDropDown from "./1_input-selector-flags";
-
 import createDropDownOptionLIst from "./2_render_options";
 import elementRendering from "../../global/render_el";
+
 const arrOfIndexes = [0, 1, 6, 7];
-let winIsOpen = false
+let isWinOpen = false
 const inputClickHandler = function () {
-  const getInputsWrappers = document.querySelectorAll(".row-input__wrapper");
-  getInputsWrappers.forEach((input, i) => {
-    input.addEventListener("click", (event) => {
-      toggleInputOptionsDropDown (input, i)
-    });
-  }); 
+  const getInputsWrappers = document.querySelectorAll(".row-input__wrapper"); // change as input=field
+  document.addEventListener('click', (event) => {
+    const inputs = document.querySelectorAll('.input-field')
+    const input = Array.from(inputs).find(input => input === event.target)
+    const inputIndex = input? Array.from(inputs).indexOf(input): null;
+    const inputWrapper = input? input.parentElement: null;
 
+      if (event.target === input) {
+        const getOptionList = document.querySelector('.input-options')
+        getOptionList? getOptionList.remove(): null;
 
+          let optionList = createDropDownOptionLIst(arrOfIndexes, inputIndex)
+          elementRendering(inputWrapper, optionList)
+      }else {
+        const getOptionList = document.querySelector('.input-options')
+        getOptionList? getOptionList.remove(): null;
+      }
+
+  })
 };
 
 export default inputClickHandler;

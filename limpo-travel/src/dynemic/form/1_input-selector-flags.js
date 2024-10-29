@@ -22,7 +22,7 @@ const toggleInputOptionsDropDown = function (input, i) {
                 console.log(openedElement)
                 if (openedElement) {
                   openedElement.remove();
-                  isOptionOpend = false; // Устанавливаем состояние, что меню закрыто
+                  isOptionOpend = false; 
                 }
             }
   } else {
