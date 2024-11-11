@@ -18,7 +18,7 @@ const mainBlock = function () {
     //sections layouts
   const formSection = createFormSection()
   elementRendering(main, formSection)
-    //sectionsdropdowns
+    //sectionsdropdowns 
     inputClickHandler()
 };
 mainBlock();

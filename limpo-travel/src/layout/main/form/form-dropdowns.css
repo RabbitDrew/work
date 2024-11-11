@@ -1,6 +1,6 @@
 .input-options {
   width: 100%;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: start;

@@ -1,0 +1,210 @@
+.main-offers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #F4FBFD ;
+}
+
+
+.main-offers__wrappers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 50px 40px 50px 40px;
+
+    .offers-switcher__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        gap: 10px;
+
+        .switcher__wrapper {
+            //width: 320px; //approximetly
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            
+            .switcher-flame {
+                fill:#4f575f;
+                transition: fill .5s ease;
+            }
+
+            .switcher-title {
+                font-size: 28px;
+                font-weight: 400;
+                letter-spacing:  1px;
+                font-family: var(--title-font);
+                
+                color: #4f575f;
+                
+                align-self: flex-start;
+                text-align: center;
+
+                padding: 5px;
+
+                transition: color .5s ease;
+            }
+
+            .bold {
+                font-weight: 700;
+            }
+
+        }
+
+        .tours {
+            display: none;
+        }
+
+        .switcher__wrapper:hover .switcher-title {
+            color: #69727d;
+        }
+
+        .switcher__wrapper:hover .switcher-flame {
+            fill: #fdc29a;
+        }
+    }
+    
+}
+
+
+
+//slider 
+.offers-slider__wrapper {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 40px;
+
+    .arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        border: 1px #4f575f solid;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    // spec offers
+        
+    //last tours offers
+    .slider-last-tour__wrapper {        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .last-tour__window {
+            width: 700px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            overflow: hidden;
+
+
+            .last-tour__expo {
+                width: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                gap: 20px;
+            }
+        }
+    }
+}
+
+
+// card
+.expo-card {  // for bg
+    width: 220px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+
+    
+    gap: 10px;
+
+    border-radius: 5px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.expo-card-descrip__wrpaer {
+    width: 100%;
+    height: auto;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px 20px 5px;
+
+    gap: 10px;
+
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.55), rgba(0, 171, 250, 0.8));
+    border-bottom-left-radius:  5px;
+    border-bottom-right-radius:  5px;
+    .last-tour-title {
+        font-size: 18px;
+        font-weight: 700;
+        font-family: var(--main-font);
+    
+        color: #4f575f;
+    }
+    
+    .last-tour-btn {
+        padding: 5px;
+        border-radius: 5px;
+        background-color: #cbf7fb97;
+    
+        .last-tour-btn-title {
+            font-size: 18px;
+            font-weight: 400;
+            font-family: var(--main-font);
+            font-size: 15px;
+            color: #4f575f;
+        }
+    }
+}
+
+.hide--spec {
+    display: none;
+}
+
+/*test  links*/
+.last-tour--card-1 {
+ background-image:  url(../../../assets/slider-img/simple-hotel.jpg);
+ backdrop-filter: brightness(20%);
+}
+
+.last-tour--card-2 {
+    background-image:  url(../../../assets/slider-img/ilios.jpeg);
+}
+
+.last-tour--card-3 {
+    background-image:  url(../../../assets/slider-img/Diamond.jpg);
+}
+
+.last-tour--card-4 {
+ background-image:  url(../../../assets/slider-img/Paradise-beach.jpg);
+}
