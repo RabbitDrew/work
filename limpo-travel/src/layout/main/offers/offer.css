@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #F4FBFD;
+  background-color: #f4fbfd;
 }
 
 .main-offers__wrappers {
@@ -49,7 +49,17 @@
   display: none;
 }
 .main-offers__wrappers .offers-switcher__wrapper .switcher__wrapper:hover .switcher-title {
-  color: #69727d;
+  color: rgba(0, 0, 0, 0.48);
+}
+.main-offers__wrappers .offers-switcher__wrapper .ticket {
+  fill: none;
+  stroke: #4f575f;
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+  transition: stroke 0.5s ease;
+}
+.main-offers__wrappers .offers-switcher__wrapper .switcher__wrapper:hover .ticket {
+  stroke: #fdc29a;
 }
 .main-offers__wrappers .offers-switcher__wrapper .switcher__wrapper:hover .switcher-flame {
   fill: #fdc29a;
@@ -61,15 +71,6 @@
   justify-content: center;
   align-items: center;
   gap: 40px;
-}
-.offers-slider__wrapper .arrow {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-  border: 1px #4f575f solid;
-  border-radius: 5px;
-  cursor: pointer;
 }
 .offers-slider__wrapper .slider-last-tour__wrapper {
   display: flex;
@@ -90,6 +91,34 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+.offers-slider__wrapper .arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border: 1px #4f575f solid;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: border 0.5s ease;
+  /*arrows*/
+}
+.offers-slider__wrapper .arrow:hover {
+  border: 1px rgba(0, 0, 0, 0.35) solid;
+}
+.offers-slider__wrapper .arrow-icon path {
+  fill: none;
+  stroke: #4f575f;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke 0.5s ease;
+}
+.offers-slider__wrapper .arrow.left:hover .arrow-icon path {
+  stroke: rgba(0, 0, 0, 0.35);
+}
+.offers-slider__wrapper .arrow.right:hover .arrow-icon path {
+  stroke: rgba(0, 0, 0, 0.35);
 }
 
 .expo-card {
@@ -126,16 +155,25 @@
   color: #4f575f;
 }
 .expo-card-descrip__wrpaer .last-tour-btn {
-  padding: 5px;
+  padding: 6px 10px;
   border-radius: 5px;
   background-color: rgba(203, 247, 251, 0.5921568627);
+  cursor: pointer;
+  transition: background-color 0.5s ease;
 }
 .expo-card-descrip__wrpaer .last-tour-btn .last-tour-btn-title {
   font-size: 18px;
   font-weight: 400;
   font-family: var(--main-font);
   font-size: 15px;
+  letter-spacing: 1px;
   color: #4f575f;
+}
+.expo-card-descrip__wrpaer .last-tour-btn:hover {
+  background-color: rgba(203, 247, 251, 0.8274509804);
+}
+.expo-card-descrip__wrpaer .last-tour-btn:hover .last-tour-btn-title {
+  color: rgba(0, 0, 0, 0.55);
 }
 
 .hide--spec {

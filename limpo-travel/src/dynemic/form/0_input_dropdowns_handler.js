@@ -1,7 +1,6 @@
 import toggleInputOptionsDropDown from "./1_input-selector-flags";
 
 
-
 const inputClickHandler = function () {
   document.addEventListener('click', (event) => {
     toggleInputOptionsDropDown(event)
