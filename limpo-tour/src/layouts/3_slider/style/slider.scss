@@ -1,0 +1,90 @@
+@use '../../0_page//style/common.scss' as *;
+
+
+.slider-win {
+    max-width: 900px;
+    width: 100%;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    z-index: 2;
+
+    
+    .slider-expo {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    
+        gap: 20px;
+
+
+    }
+
+    .spec--offer {
+        display: none;
+    }
+
+}
+
+
+.expo-card {
+    max-width: 900px;
+    width: 100%;
+    flex-shrink: 0;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+
+    background-image: url(../../../assets/slider/cards/MinamarkBeachResort.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    .card-title__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+
+        gap: 8px;
+
+
+        background-color: rgba(255, 255, 255, 0.5);
+
+
+        border-radius: 10px;
+
+        padding: 20px;
+
+        .card-title {
+            @include fontStyle(18px, "Comfortaa", 700, 1px, #181C29);
+            font-optical-sizing: auto;
+        }
+
+         .card-title-star__wrapper {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+
+            gap: 8px;
+
+            .card-star{
+                @include fontStyle(18px, "Comfortaa", 700, 1px, #181C29);
+                font-optical-sizing: auto;
+            }
+         }
+
+         .card-subtitle {
+            @include fontStyle(18px, "Comfortaa", 700, 1px, #181C29);
+            font-optical-sizing: auto;
+         }
+    }
+
+}

@@ -1,0 +1,32 @@
+@use '../../0_page//style/common.scss' as *;
+
+.slider-title__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    gap: 5px;
+    z-index: 2;
+
+}
+
+.slider-title-btn__wrapper {
+    max-width: 380px;
+    padding: 5px;
+    text-align: start;
+    align-self: start;
+
+    cursor: pointer;
+}
+
+.slider-title-btn {
+    @include fontStyle(23px, "Comfortaa", 700, 1px, #ffffff);
+    font-optical-sizing: auto;
+}
+
+
+@media (pointer: fine) {
+
+}
+

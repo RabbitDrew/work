@@ -1,0 +1,113 @@
+@use '../../0_page//style/common.scss' as *;
+
+.intro-form__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 10px;
+    z-index: 2;
+}
+
+.intro-form__form-title {
+    width: 100%;
+    @include fontStyle(23px, "Comfortaa", 400, 1px, #ffffff);
+    font-optical-sizing: auto;
+}
+
+
+.intro-form__form {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    gap: 10px;
+
+    background-color: rgba(255, 255, 255, 0.7); /*?*/
+
+    border-radius: 10px;
+
+    padding: 20px 20px;
+}
+
+.intro-form-item {
+    max-width: 198px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    overflow: hidden;
+}
+
+.intro-form-input {
+    height: 25px;
+    background: transparent;
+    border: none;
+    outline: none;
+    caret-color: var(--main-bg-color);
+    @include fontStyle(16px, "Comfortaa", 600, 1px, #181C29);
+    font-optical-sizing: auto;
+}
+
+.intro-form-input::placeholder {
+    @include fontStyle(16px, "Comfortaa", 600, 1px, #181C29);
+    font-optical-sizing: auto;
+}
+
+.input-style-line {
+    width: 100%;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition:  background-color .2s ease-in-out;
+}
+
+.intro-form-input:focus + .input-style-line {
+    background-color: var(--main-bg-color);
+}
+
+/*form btn*/
+
+.intro-form-item--btn__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    cursor: pointer;
+}
+
+.intro-form-item__btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+
+    background-color: #ffffff;
+
+    padding: 5px 0;
+    transition:  background-color .5s ease-in-out;
+}
+
+.intro-form-input-item__title {
+    @include fontStyle(18px, "Comfortaa", 600, 1px, #181C29);
+    font-optical-sizing: auto;
+    transition:  color .5s ease-in-out;
+}
+
+@media (pointer: fine) {
+.intro-form-item--btn__wrapper:hover .intro-form-item__btn {
+    background-color: var(--accent-color);
+}
+
+.intro-form-item--btn__wrapper:hover .intro-form-input-item__title {
+    color: #ffffff;
+}
+
+}
