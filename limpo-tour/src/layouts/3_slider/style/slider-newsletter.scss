@@ -1,0 +1,110 @@
+@use "../../0_page//style/common.scss" as *;
+
+.slider-newsletter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+
+  z-index: 2;
+
+  gap: 20px;
+}
+
+.newsletter-input-title__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0px;
+  .newsletter-input-title {
+    @include fontStyle(28px, "Comfortaa", 700, 1px, #ffffff);
+    font-optical-sizing: auto;
+    padding: 0 0 0 5px;
+  }
+  .newsletter-input-subtitle {
+    @include fontStyle(18px, "Comfortaa", 700, 1px, #ffffff);
+    font-optical-sizing: auto;
+    padding: 0 0 0 5px;
+  }
+}
+
+.newsletter-input-field {
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  flex: 1;
+  gap: 10px;
+
+  gap: 5px;
+
+  .newsletter-input-field__wrapper {
+    min-width: 380px; /*?*/
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    flex: 1;
+    position: relative;
+
+    padding: 0 0 5px 0;
+
+    .input-field {
+      width: 100%;
+      height: 30px;
+      align-self: flex-end;
+      border: none;
+      outline: none;
+      background: transparent;
+      @include fontStyle(18px, "Comfortaa", 400, 1px, #ffffff);
+      font-optical-sizing: auto;
+    }
+
+    .input-field::placeholder {
+      @include fontStyle(18px, "Comfortaa", 400, 1px, #ffffff);
+      font-optical-sizing: auto;
+    }
+    .input-field:focus {
+      border: none;
+    }
+
+    .input-field-style-line {
+      width: 100%;
+      height: 4px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    .input-field:focus + .input-field-style-line {
+      background-color: var(--accent-color);
+    }
+  }
+
+  .newsletter-input-btn__wrapper {
+    padding: 0 0 5px 0;
+    .newsletter-input-btn {
+      padding: 5px 10px;
+
+      background-color: #ffffff;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+      .newsletter-input-btn-title {
+        @include fontStyle(18px, "Comfortaa", 400, 1px, #181c29);
+        font-optical-sizing: auto;
+        transition: color 0.2s ease-in-out;
+      }
+    }
+
+    .newsletter-input-btn:hover {
+      background-color: var(--accent-color);
+    }
+    .newsletter-input-btn:hover .newsletter-input-btn-title {
+      color: #ffffff;
+    }
+  }
+}

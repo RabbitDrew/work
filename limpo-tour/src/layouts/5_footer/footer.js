@@ -1,0 +1,4 @@
+import './style/footer.css'
+import './style/addres.css'
+import './style/telephone.css'
+import './style/mail.css'

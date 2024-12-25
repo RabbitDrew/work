@@ -13,7 +13,7 @@
 
 .intro-form__form-title {
     width: 100%;
-    @include fontStyle(23px, "Comfortaa", 400, 1px, #ffffff);
+    @include fontStyle(28px, "Comfortaa", 400, 1px, #ffffff);
     font-optical-sizing: auto;
 }
 
@@ -64,15 +64,14 @@
     height: 4px;
     background-color: #ffffff;
     border-radius: 10px;
-    transition:  background-color .2s ease-in-out;
+    transition:  background-color .2s ease-in-out
 }
 
 .intro-form-input:focus + .input-style-line {
-    background-color: var(--main-bg-color);
+    background-color: var(--accent-color);
 }
 
 /*form btn*/
-
 .intro-form-item--btn__wrapper {
     display: flex;
     justify-content: center;

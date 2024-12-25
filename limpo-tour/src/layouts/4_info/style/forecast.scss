@@ -1,0 +1,61 @@
+@use '../../0_page//style/common.scss' as *;
+
+.info-content-forecast__wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px 20px;
+    border-radius: 10px;
+
+    background-color: rgba(255, 255, 255, 0.7); 
+
+}
+
+
+.info-content-list__forecast {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    gap: 10px;
+    
+    .info-content-item__forecast {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .item-forecast-title {
+            @include fontStyle(18px, "Comfortaa", 400, 1px, #181C29);
+            font-optical-sizing: auto;
+        }
+
+        .iten-forecast-temp {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            .item-temp-title {
+                @include fontStyle(18px, "Comfortaa", 400, 1px, #181C29);
+                font-optical-sizing: auto;
+            }
+
+
+
+        }
+
+    }
+}
+
+.temp-img {
+    width: 20px;
+    height: 20px;
+}
+
+
+

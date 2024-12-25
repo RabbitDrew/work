@@ -14,6 +14,17 @@
   border: 2px #ffffff solid;
   border-radius: 10px;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.slider-btn__wrapper .btn-arrow .arrow {
+  stroke: #ffffff;
+  transition: stroke 0.5s ease-in-out;
+}
+@media (pointer: fine) {
+  .slider-btn__wrapper .btn-arrow:hover {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+  }
 }
 
 /*# sourceMappingURL=slider-btn.css.map */
