@@ -1,0 +1,28 @@
+.main-slider {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 60px 80px;
+  gap: 40px; /*?*/
+  overflow: hidden;
+}
+
+.main-slider::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-image: url(../../../assets/slider/plain-top.png);
+  background-repeat: no-repeat;
+  background-size: 380px 400px;
+  background-position: top left;
+  opacity: 0.3;
+}
+
+/*# sourceMappingURL=slider-section.css.map */

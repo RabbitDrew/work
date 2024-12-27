@@ -1,0 +1,28 @@
+@use '../../0_page//style/common.scss' as *;
+
+.intro-form-title__wrapper {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    
+    gap: 8px;
+    z-index: 2;
+}
+
+.intro-form-title {
+  @include fontStyle(28px, "Comfortaa", 400, 1px, #ffffff);
+  font-optical-sizing: auto;
+  .title-brand-name {
+    @include fontStyle(32px, "Comfortaa", 700, 1px, var(--accent-color));
+    font-optical-sizing: auto;
+  }
+}
+
+.intro-form-subtitle {
+  @include fontStyle(28px, "Comfortaa", 400, 1px, #ffffff);
+  font-optical-sizing: auto;
+}
+

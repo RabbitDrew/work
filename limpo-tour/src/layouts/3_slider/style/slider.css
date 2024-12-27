@@ -1,0 +1,179 @@
+/*common_styles_for whole_body*/
+.page {
+  min-width: 320px;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 15px;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  position: relative;
+}
+.page .page-main {
+  max-width: 1440px;
+  min-width: 320px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(140deg, #64c1ff 3%, #0099ff 100%);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-radius: 10px;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  text-decoration: none;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+:root {
+  /*colors*/
+  --accent-color: #ffcda2;
+  --header-font-color: #181C29;
+  --hover-header-bg-color: rgba(0, 153, 255, 0.2);
+  /*main-section*/
+  --main-bg-color:#0099ff;
+}
+
+.slider-win {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 2;
+}
+.slider-win .slider-expo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  transform: translateX(0);
+}
+.slider-win .spec--offer {
+  display: none;
+}
+
+.expo-card {
+  max-width: 600px;
+  width: 100%;
+  flex-shrink: 0;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  background-image: url(../../../assets/slider/cards/MinamarkBeachResort.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.expo-card .card-title__wrapper {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  gap: 8px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  /*for creating a tringle*/
+  clip-path: polygon(0% 100%, 0% 0%, 100% 100%);
+  padding: 20px;
+  transition: background-color 0.5s ease-in-out;
+}
+.expo-card .card-title__wrapper .card-title {
+  width: 20%;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: #181c29;
+  font-optical-sizing: auto;
+  transition: color 0.5s ease-in-out;
+}
+.expo-card .card-title__wrapper .card-title-star__wrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+}
+.expo-card .card-title__wrapper .card-title-star__wrapper .card-star {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: #181c29;
+  font-optical-sizing: auto;
+  transition: color 0.5s ease-in-out;
+}
+.expo-card .card-title__wrapper .card-title-star__wrapper .card-star-svg {
+  fill: #181c29;
+  transition: fill 0.5s ease-in-out;
+}
+.expo-card .card-title__wrapper .card-subtitle {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: #181c29;
+  font-optical-sizing: auto;
+  transition: color 0.5s ease-in-out;
+}
+
+@media (pointer: fine) {
+  .expo-card:hover .card-title__wrapper {
+    background-color: rgba(0, 153, 255, 0.7);
+  }
+  .expo-card:hover .card-title {
+    color: #ffffff;
+  }
+  .expo-card:hover .card-title-star__wrapper .card-star {
+    color: #ffffff;
+  }
+  .expo-card:hover .card-title-star__wrapper .card-star-svg {
+    fill: var(--accent-color);
+  }
+  .expo-card:hover .card-subtitle {
+    color: #ffffff;
+  }
+}
+
+/*# sourceMappingURL=slider.css.map */

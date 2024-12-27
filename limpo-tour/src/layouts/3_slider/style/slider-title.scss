@@ -1,0 +1,42 @@
+@use "../../0_page//style/common.scss" as *;
+
+.slider-title__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+
+  gap: 10px;
+  z-index: 2;
+}
+
+.slider-title-btn__wrapper {
+  max-width: 380px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 5px;
+  
+  cursor: pointer;
+
+  border: 2px #ffffff solid;
+  border-radius: 10px;
+  transition: all .5s ease-in-out;
+  .slider-title-btn {
+    width: 100%;
+    text-align: center;
+    @include fontStyle(28px, "Comfortaa", 400, 1px, #ffffff);
+    font-optical-sizing: auto;
+  }
+}
+
+
+
+@media (pointer: fine) {
+  .slider-title-btn__wrapper:hover {
+   background-color: var(--accent-color);
+   border-color:  var(--accent-color);
+  }
+}
