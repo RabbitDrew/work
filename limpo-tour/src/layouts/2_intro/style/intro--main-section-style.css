@@ -6,7 +6,7 @@
   align-items: center;
   position: relative;
   padding: 20px 80px 60px 80px;
-  gap: 160px; /*to ceporate form from title*/
+  gap: 160px; /*to seporate form from title*/
   /*find the bg picture*/
   position: relative;
 }

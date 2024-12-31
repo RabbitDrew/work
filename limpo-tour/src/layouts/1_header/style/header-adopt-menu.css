@@ -87,23 +87,84 @@ li {
 }
 
 /*common font styles*/
-.addres-links__wrapper {
+.page-header-modal-btn__wrapper {
   width: 100%;
+  display: none;
+  justify-content: end;
+  align-items: center;
+  cursor: pointer;
+}
+.page-header-modal-btn__wrapper .modal-btn__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
-  gap: 10px;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
 }
-.addres-links__wrapper .addres-link {
-  text-align: start;
+.page-header-modal-btn__wrapper .modal-btn__wrapper .modal-btn-line {
+  width: 40px;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #181c29;
+  pad: 10px;
+}
+
+.page-header-adopt__nav__wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  position: fixed;
+  top: 96px;
+  right: 0;
+  z-index: 3;
+  gap: 20px;
+  animation: openMenu 0.5s ease;
+}
+
+.header-adopt-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-adopt-nav .adopt-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  border-radius: 10px;
+  transition: background-color 0.5s ease-in-out;
+}
+.header-adopt-nav .adopt-nav-item .item-link {
   font-family: "Comfortaa", sans-serif;
   font-size: 18px;
   font-weight: 400;
   font-style: normal;
   letter-spacing: 1px;
-  color: #ffffff;
+  color: #181c29;
   font-optical-sizing: auto;
+  transition: color 0.5s ease-in-out;
+}
+@media (pointer: fine) {
+  .header-adopt-nav .adopt-nav-item:hover {
+    background-color: var(--hover-header-bg-color);
+  }
+  .header-adopt-nav .adopt-nav-item:hover .item-link {
+    color: var(--main-bg-color);
+  }
 }
 
-/*# sourceMappingURL=addres.css.map */
+.header-adopt-contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/*# sourceMappingURL=header-adopt-menu.css.map */

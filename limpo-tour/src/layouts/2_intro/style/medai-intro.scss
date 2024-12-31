@@ -1,0 +1,29 @@
+/*main media*/
+@use '../../0_page//style/common.scss' as *;
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+    .main-intro-form {
+        padding: 20px 40px 60px 40px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .main-intro-form {
+        padding: 20px 8px 60px 8px;
+    }
+}
+
+
+@media screen and (max-width: 380px) {
+    .intro-form-title { 
+        text-align: center;
+        @include fontStyle(28px, "Comfortaa", 400, 1px, #ffffff);
+        font-optical-sizing: auto;
+      }
+      
+      .intro-form-subtitle {
+        text-align: center;
+        @include fontStyle(28px, "Comfortaa", 400, 1px, #ffffff);
+        font-optical-sizing: auto;
+      }
+}
+

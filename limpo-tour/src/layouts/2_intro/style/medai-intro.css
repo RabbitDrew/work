@@ -1,3 +1,4 @@
+/*main media*/
 /*common_styles_for whole_body*/
 .page {
   min-width: 320px;
@@ -87,23 +88,37 @@ li {
 }
 
 /*common font styles*/
-.addres-links__wrapper {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  gap: 10px;
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .main-intro-form {
+    padding: 20px 40px 60px 40px;
+  }
 }
-.addres-links__wrapper .addres-link {
-  text-align: start;
-  font-family: "Comfortaa", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 1px;
-  color: #ffffff;
-  font-optical-sizing: auto;
+@media screen and (max-width: 1024px) {
+  .main-intro-form {
+    padding: 20px 8px 60px 8px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .intro-form-title {
+    text-align: center;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-optical-sizing: auto;
+  }
+  .intro-form-subtitle {
+    text-align: center;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-optical-sizing: auto;
+  }
 }
 
-/*# sourceMappingURL=addres.css.map */
+/*# sourceMappingURL=medai-intro.css.map */

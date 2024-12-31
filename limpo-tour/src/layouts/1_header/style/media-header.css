@@ -1,0 +1,35 @@
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .page-header {
+    padding: 10px 40px;
+  }
+  .page-header__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .page-header__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 5px;
+  }
+  .page-header {
+    padding: 10px 8px;
+    gap: 5px;
+  }
+  .nav-item {
+    padding: 6px 6px !important; /*TODO findeing out how to remove derective*/
+  }
+}
+@media screen and (max-width: 768px) {
+  .page-header__wrapper--hide {
+    display: none;
+  }
+  .page-header-modal-btn__wrapper {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=media-header.css.map */
