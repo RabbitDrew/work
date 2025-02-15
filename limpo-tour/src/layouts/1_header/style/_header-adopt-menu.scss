@@ -1,0 +1,87 @@
+@use "../../0_page//style/common.scss" as *;
+
+.page-header-modal-btn__wrapper {
+  width: 100%;
+  display: none;
+  justify-content: end;
+  align-items: center;
+  cursor: pointer;
+
+  .modal-btn__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    padding: 5px;
+
+    .modal-btn-line {
+      width: 40px;
+      height: 3px;
+      border-radius: 10px;
+      background-color: #181c29;
+
+      pad: 10px;
+    }
+  }
+}
+
+.page-header-adopt__nav__wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+
+  position: fixed;
+  top: 96px;
+  right: 0;
+  z-index: 3;
+  gap: 20px;
+
+  animation: openMenu 0.5s ease;
+}
+
+.header-adopt-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .adopt-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    border-radius: 10px;
+    transition: background-color 0.5s ease-in-out;
+
+    .item-link {
+      @include fontStyle(18px, "Comfortaa", 400, 1px, #181c29);
+      font-optical-sizing: auto;
+      transition: color 0.5s ease-in-out;
+    }
+  }
+
+  @media (pointer: fine) {
+    .adopt-nav-item:hover {
+      background-color: var(--hover-header-bg-color);
+    }
+
+    .adopt-nav-item:hover .item-link {
+      color: var(--main-bg-color);
+    }
+  }
+}
+
+.header-adopt-contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+}

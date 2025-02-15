@@ -33,4 +33,5 @@
 .footer-logo-subtitle {
     @include fontStyle(12px, "Comfortaa", 700, 1px, #181C29);
     font-optical-sizing: auto;
+    text-align: center;
 }
