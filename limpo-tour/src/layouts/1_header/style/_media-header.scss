@@ -1,0 +1,68 @@
+// TODO solve problem with derective
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .page-header {
+    padding: 10px 40px !important;
+  }
+
+  .page-header__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .header-nav {
+      width: 100%;
+      justify-content: end;
+    }
+  }
+
+  .header-contacts {
+    width: 100%;
+    justify-content: end;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .page-header {
+    padding: 10px 8px !important;
+    gap: 5px;
+  }
+
+  .page-header__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+
+    gap: 5px;
+  }
+  .page-header__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .header-nav {
+      width: 100%;
+      justify-content: end;
+    }
+  }
+
+  .header-contacts {
+    width: 100%;
+    justify-content: end;
+  }
+
+  .nav-item {
+    padding: 6px 6px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-header__wrapper {
+    display: none !important;
+  }
+  .header-contacts {
+    display: none;
+  }
+  .page-header-modal-btn__wrapper {
+    display: flex;
+  }
+}

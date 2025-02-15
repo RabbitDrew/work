@@ -1,8 +1,13 @@
 @use "../../0_page//style/common.scss" as *;
+@use "./addres";
+@use "./telephone";
+@use "./mail";
+@use "./footer-logo";
+@use './media-footer';
 
 .page-footer {
   max-width: 1440px;
-  min-width: 380px;
+  min-width: 320px;
   width: 100%;
 
   display: flex;
@@ -39,9 +44,10 @@
 .footer-contacts-addres__wrapper,
 .footer-contacts-tel__wrapper,
 .footer-contacts-mail__wrapper {
-  max-width: 380px;
-  min-width: 320px;
+  max-width: 320px;
+  min-width: 300px;
   width: 100%;
+  min-height: auto;
   height: 150px;
   display: flex;
   flex-direction: column;
