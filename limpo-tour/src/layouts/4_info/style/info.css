@@ -272,6 +272,19 @@ li {
     align-items: center !important;
   }
 }
+@media screen and (max-width: 1024px) {
+  .main-info {
+    padding: 40px 8px !important;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .info-title {
+    text-align: center !important;
+  }
+}
 .main-info {
   width: 100%;
   display: flex;
