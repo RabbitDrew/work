@@ -1,51 +1,74 @@
-/*main media*/
-@use '../../0_page//style/common.scss' as *;
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-    .main-intro-form {
-        padding: 20px 40px 60px 40px !important;
+@use "../../0_page//style/common.scss" as *;
 
-    }
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .main-intro-form {
+    padding: 20px 40px 60px 40px !important;
+  }
 }
 
 @media screen and (max-width: 1024px) {
-    .main-intro-form {
-        padding: 20px 8px 60px 8px !important;
-        gap: 100px !important;
-    }
+  .main-intro-form {
+    padding: 20px 8px 60px 8px !important;
+    gap: 100px !important;
+  }
 }
 
-@media screen and (max-width:  768px) {
-    .main-intro-form {
-        gap: 80px !important;
-    }
 
-    .intro-form-title { 
+@media screen and (max-width: 768px) {
+  .main-intro-form {
+    gap: 60px !important;
+  }
+  //* intro form  title and subtitle media styles
+  .intro-form-title {
+    width: 100%;
+    text-align: center;
+    font-size: 21px;
+    font-optical-sizing: auto;
+
+    .title-brand-name {
+      font-size: 26px;
+      font-optical-sizing: auto;
+    }
+  }
+
+  .intro-form-subtitle {
+    width: 100%;
+    text-align: center;
+    font-size: 21px;
+    font-optical-sizing: auto;
+  }
+
+  //* fonts of form
+  .intro-form__form-title {
+    text-align: center;
+    font-size: 21px;
+  }
+
+  .intro-form-input {
+    font-size: 13px;
+  }
+
+  .intro-form-input::placeholder {
+    font-size: 13px;
+  }
+  //* btn title
+  .intro-form-input-item__title {
+    font-size: 13px;
+  }
+}
+
+
+@media screen and (max-width: 465px) {
+  .intro-form {
+    width: 70%;
+    flex-direction: column;
+  }
+  .intro-form-item {
+    max-width: 100%;
+    width: 100%;
+
+    .intro-form-input {
         width: 100%;
-        text-align: center;
-        @include fontStyle(28px, "Comfortaa", 400, 1px, #ffffff);
-        font-optical-sizing: auto;
-      }
-      
-      .intro-form-subtitle {
-        width: 100%;
-        text-align: center;
-        @include fontStyle(28px, "Comfortaa", 400, 1px, #ffffff);
-        font-optical-sizing: auto;
-      }
-
-    .intro-form__form-title {
-        text-align: center;
     }
-
+  }
 }
-
-
-@media screen and (max-width: 460px) {
-    .intro-form {
-        flex-direction: column;
-    }
-}
-
-
-
-

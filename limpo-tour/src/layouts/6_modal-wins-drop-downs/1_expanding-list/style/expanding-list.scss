@@ -1,0 +1,45 @@
+@use "../../../0_page/style/common.scss" as *;
+.expanding-list {
+  width: 335px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+
+  animation: expandList 0.5s ease forwards;
+  transform-origin: right;
+  .expanding-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px;
+    .expanding-list-item-title {
+      @include fontStyle(16px, "Comfortaa", 600, 1px, #ffff);
+    }
+  }
+}
+
+@keyframes expandList {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.expanding-list--close {
+  animation: rollUpList 0.5s ease forwards;
+}
+
+@keyframes rollUpList {
+  0% {
+    transform: scaleX(1);
+  }
+
+  100% {
+    transform: scaleX(0);
+  }
+}

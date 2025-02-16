@@ -6,6 +6,7 @@
   margin: 0 auto;
   padding: 0;
   font-size: 15px;
+  font-family: "comforta", sans-serif;
   color: #000;
   display: flex;
   flex-direction: column;
@@ -61,7 +62,7 @@ li {
   /*colors*/
   --accent-color: #ffcda2;
   --header-font-color: #181c29;
-  --hover-header-bg-color: rgba(0, 153, 255, 0.2);
+  --hover-header-bg-color: rgba(0, 153, 255, 0.7);
   /*main-section*/
   --main-bg-color: #0099ff;
 }
@@ -348,12 +349,8 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*
-  style for dropdowns
   gap: 8px;
   position: relative;
-                stroke="#000"
-  */
   padding: 8px 12px;
   cursor: pointer;
   border-radius: 10px;
@@ -374,7 +371,7 @@ li {
     background-color: var(--hover-header-bg-color);
   }
   .header-nav .nav-item:hover .item-link {
-    color: var(--main-bg-color);
+    color: #ffffff;
   }
 }
 
@@ -387,7 +384,7 @@ li {
 }
 .header-contacts .contacts-item {
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
   padding: 8px 8px;
@@ -408,10 +405,10 @@ li {
     background-color: var(--hover-header-bg-color);
   }
   .header-contacts .contacts-item:hover .contact-item-address-svg {
-    stroke: var(--main-bg-color);
+    stroke: #ffffff;
   }
   .header-contacts .contacts-item:hover .contact-item-phone-svg {
-    fill: var(--main-bg-color);
+    fill: #ffffff;
   }
 }
 

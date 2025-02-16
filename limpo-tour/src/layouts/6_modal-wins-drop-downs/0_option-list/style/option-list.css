@@ -88,5 +88,58 @@ li {
 }
 
 /*common font styles*/
+.option-list {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--hover-header-bg-color);
+  padding: 0px 15px;
+  border-radius: 10px;
+  position: absolute;
+  top: 34px;
+  left: 0;
+  z-index: 3;
+  animation: openOptioList 0.5s ease forwards;
+  transform-origin: left top;
+}
+.option-list .option-item {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 10px 0 10px 0;
+  cursor: pointer;
+}
+.option-list .option-item .option-item-title {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
 
-/*# sourceMappingURL=common.css.map */
+@keyframes openOptioList {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.option-list--close {
+  animation: closeOptioList 0.5s ease forwards;
+}
+
+@keyframes closeOptioList {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+/*# sourceMappingURL=option-list.css.map */

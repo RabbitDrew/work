@@ -8,7 +8,7 @@
   padding: 0;
 
   font-size: 15px;
-
+  font-family: 'comforta', sans-serif;
   color: #000;
 
   display: flex;
@@ -19,6 +19,7 @@
   background-color: #fff;
 
   position: relative;
+
 
   .page-main {
     max-width: 1440px;
@@ -69,7 +70,7 @@ li {
   /*colors*/
   --accent-color: #ffcda2;
   --header-font-color: #181c29;
-  --hover-header-bg-color: rgba(0, 153, 255, 0.2);
+  --hover-header-bg-color: rgba(0, 153, 255, 0.7);
   /*main-section*/
   --main-bg-color: #0099ff;
 }
