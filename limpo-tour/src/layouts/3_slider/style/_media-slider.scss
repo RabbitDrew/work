@@ -9,15 +9,32 @@
   }
 }
 
-
 @media screen and (max-width: 768px) {
   .slider-title__wrapper {
     flex-direction: column;
     align-items: center;
   }
+
+  .slider-title-btn {
+    font-size: 21px !important;
+  }
+
+  .card-title {
+    font-size: 21px !important;
+  }
+
+  .card-star {
+    font-size: 16px !important;
+  }
+  .card-star-svg {
+    fill: #181c29;
+    transition: fill 0.5s ease-in-out;
+  }
+
+  .card-subtitle {
+    font-size: 16px !important;
+  }
 }
-
-
 
 @media screen and (max-width: 640px) {
   .slider-title__wrapper {
@@ -28,12 +45,11 @@
   .newsletter-input-title__wrapper {
     width: 100%;
     align-items: center;
-    .newsletter-input-title, 
+    .newsletter-input-title,
     .newsletter-input-subtitle {
       width: 100%;
       text-align: center;
     }
-
   }
 
   .newsletter-input-field {
@@ -42,15 +58,12 @@
     align-items: center;
 
     .newsletter-input-field__wrapper {
-     width: 100%;
-     justify-content: center;
-     align-items: center;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
     }
   }
-
 }
-
-
 
 @media screen and (max-width: 380px) {
   .main-slider {
