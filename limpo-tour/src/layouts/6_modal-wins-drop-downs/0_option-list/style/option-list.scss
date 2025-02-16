@@ -1,0 +1,58 @@
+@use '../../../0_page//style/common.scss' as *;
+
+.option-list {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--hover-header-bg-color);
+    padding: 0px 15px;
+    border-radius: 10px;
+
+    position: absolute;
+    top: 34px;
+    left: 0;
+    z-index: 3;
+
+    animation: openOptioList .5s ease forwards ;
+    transform-origin: left top; // for scaleing element from the top and left corner
+     .option-item {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        padding: 10px 0 10px 0;
+        cursor: pointer;
+      .option-item-title {
+        @include fontStyle(16px, "Comfortaa", 600, 1px,  #ffffff)
+      }
+ }   
+}
+
+//*animation
+@keyframes openOptioList {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+
+    }
+
+}
+
+.option-list--close {
+    animation: closeOptioList .5s ease forwards ;
+}
+
+@keyframes closeOptioList {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+
+    }
+
+}
