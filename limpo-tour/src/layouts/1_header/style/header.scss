@@ -1,12 +1,11 @@
-@use './header-adopt-menu';
-@use './adopt-menu-animation';
-@use './media-header';
+@use "./header-adopt-menu";
+@use "./adopt-menu-animation";
+@use "./media-header";
 
 .page-header {
   max-width: 1440px;
   min-width: 320px;
   width: 100%;
-
 
   display: flex;
   justify-content: start;
@@ -15,7 +14,11 @@
   gap: 20px;
 
   padding: 10px 80px;
+}
 
+.logo-link-img {
+  width: 65x;
+  height: 65px;
 }
 
 .page-header__wrapper {
@@ -30,17 +33,15 @@
   justify-content: center;
   align-items: center;
 
-  
   .nav-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  
+
     gap: 8px;
     position: relative;
-      
-    
+
     padding: 8px 12px;
     cursor: pointer;
 
@@ -108,11 +109,11 @@
       background-color: var(--hover-header-bg-color);
     }
 
-    .contacts-item:hover  .contact-item-address-svg {
+    .contacts-item:hover .contact-item-address-svg {
       stroke: #ffffff;
     }
 
-    .contacts-item:hover  .contact-item-phone-svg {
+    .contacts-item:hover .contact-item-phone-svg {
       fill: #ffffff;
     }
   }

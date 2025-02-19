@@ -332,6 +332,11 @@ li {
   padding: 10px 80px;
 }
 
+.logo-link-img {
+  width: 65x;
+  height: 65px;
+}
+
 .page-header__wrapper {
   width: 100%;
   display: flex;
