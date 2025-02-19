@@ -23,7 +23,7 @@
 
 @media screen and (max-width: 1024px) {
   .page-header {
-    padding: 10px 8px !important;
+    padding: 5px 8px !important;
     gap: 5px;
   }
 
@@ -64,5 +64,12 @@
   }
   .page-header-modal-btn__wrapper {
     display: flex;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .logo-link-img {
+    width: 50px !important;
+    height: 50px !important;
   }
 }
