@@ -1,49 +1,62 @@
 @media screen and (max-width: 1280px) {
-    .page-footer {
-        padding: 60px 40px !important;
-      }
+  .page-footer {
+    padding: 60px 40px !important;
+  }
 
-      .footer-contacts-addres__wrapper,
-      .footer-contacts-tel__wrapper,
-      .footer-contacts-mail__wrapper { 
-            height: 200px !important;
-      }
+  .footer-contacts-addres__wrapper,
+  .footer-contacts-tel__wrapper,
+  .footer-contacts-mail__wrapper {
+    height: 200px !important;
+  }
 }
-
 
 @media screen and (max-width: 1024px) {
-    .page-footer {
-        padding: 40px 8px !important;
-      }
+  .page-footer {
+    padding: 40px 8px !important;
+  }
 
-      .footer-contacts__wrapper {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
+  .footer-contacts__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-
-
 @media screen and (max-width: 768px) {
-    .footer-contacts-addres__wrapper,
-    .footer-contacts-tel__wrapper,
-    .footer-contacts-mail__wrapper { 
-          height: 150px !important;
+  .footer-contacts-addres__wrapper,
+  .footer-contacts-tel__wrapper,
+  .footer-contacts-mail__wrapper {
+    height: 150px !important;
+  }
+
+  .addres-title,
+  .tel-title,
+  .mail-title {
+    font-size: 21px !important;
+    text-align: center !important;
+  }
+
+  .mail-links__wrapper,
+  .tel-links__wrapper,
+  .addres-links__wrapper {
+    align-items: center;
+
+    .addres-link-item {
+      display: flex;
+
+      .addres-link {
+        font-size: 16px !important;
+      }
     }
 
-    .addres-title,
-    .tel-title,
-    .mail-title  {
-        text-align: center !important;
+    .mail-link,
+    .addres-link,
+    .tel-link {
+      font-size: 16px !important;
     }
 
-
-    .mail-links__wrapper, 
-    .tel-links__wrapper,
-    .addres-links__wrappe {
-        align-items: center;
+    .addres-link {
+      text-align: center !important;
     }
-
+  }
 }

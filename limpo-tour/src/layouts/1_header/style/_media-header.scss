@@ -23,7 +23,7 @@
 
 @media screen and (max-width: 1024px) {
   .page-header {
-    padding: 5px 8px !important;
+    padding: 10px 8px !important;
     gap: 5px;
   }
 
@@ -56,6 +56,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .page-header {
+    padding: 5px 8px !important;
+  }
+
   .page-header__wrapper {
     display: none !important;
   }
