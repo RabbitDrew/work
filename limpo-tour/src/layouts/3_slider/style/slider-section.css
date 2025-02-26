@@ -417,6 +417,16 @@ li {
   .card-subtitle {
     font-size: 16px !important;
   }
+  .newsletter-input-title,
+  .newsletter-input-subtitle {
+    font-size: 21px !important;
+  }
+  .input-field::placeholder {
+    font-size: 16px;
+  }
+  .newsletter-input-btn__wrapper .newsletter-input-btn-title {
+    font-size: 16px !important;
+  }
 }
 @media screen and (max-width: 640px) {
   .slider-title__wrapper {
@@ -429,6 +439,7 @@ li {
   }
   .newsletter-input-title__wrapper .newsletter-input-title,
   .newsletter-input-title__wrapper .newsletter-input-subtitle {
+    font-size: 21px;
     width: 100%;
     text-align: center;
   }

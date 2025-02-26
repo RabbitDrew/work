@@ -214,12 +214,39 @@ li {
   .addres-title,
   .tel-title,
   .mail-title {
+    font-size: 21px !important;
     text-align: center !important;
   }
   .mail-links__wrapper,
   .tel-links__wrapper,
-  .addres-links__wrappe {
+  .addres-links__wrapper {
     align-items: center;
+  }
+  .mail-links__wrapper .addres-link-item,
+  .tel-links__wrapper .addres-link-item,
+  .addres-links__wrapper .addres-link-item {
+    display: flex;
+  }
+  .mail-links__wrapper .addres-link-item .addres-link,
+  .tel-links__wrapper .addres-link-item .addres-link,
+  .addres-links__wrapper .addres-link-item .addres-link {
+    font-size: 16px !important;
+  }
+  .mail-links__wrapper .mail-link,
+  .mail-links__wrapper .addres-link,
+  .mail-links__wrapper .tel-link,
+  .tel-links__wrapper .mail-link,
+  .tel-links__wrapper .addres-link,
+  .tel-links__wrapper .tel-link,
+  .addres-links__wrapper .mail-link,
+  .addres-links__wrapper .addres-link,
+  .addres-links__wrapper .tel-link {
+    font-size: 16px !important;
+  }
+  .mail-links__wrapper .addres-link,
+  .tel-links__wrapper .addres-link,
+  .addres-links__wrapper .addres-link {
+    text-align: center !important;
   }
 }
 .page-footer {
