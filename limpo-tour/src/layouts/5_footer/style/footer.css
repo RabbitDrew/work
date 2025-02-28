@@ -88,6 +88,73 @@ li {
 }
 
 /*common font styles*/
+.page-footer {
+  max-width: 1440px;
+  min-width: 320px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 80px;
+  gap: 40px;
+}
+
+.footer-contacts__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-logo__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-contacts-addres__wrapper,
+.footer-contacts-tel__wrapper,
+.footer-contacts-mail__wrapper {
+  max-width: 320px;
+  min-width: 300px;
+  width: 100%;
+  min-height: auto;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--main-bg-color);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+.footer-contacts-addres__wrapper .addres-title,
+.footer-contacts-addres__wrapper .tel-title,
+.footer-contacts-addres__wrapper .mail-title,
+.footer-contacts-tel__wrapper .addres-title,
+.footer-contacts-tel__wrapper .tel-title,
+.footer-contacts-tel__wrapper .mail-title,
+.footer-contacts-mail__wrapper .addres-title,
+.footer-contacts-mail__wrapper .tel-title,
+.footer-contacts-mail__wrapper .mail-title {
+  width: 100%;
+  width: 100%;
+  text-align: start;
+  font-family: "Comfortaa", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-optical-sizing: auto;
+}
+
 .addres-links__wrapper {
   width: 100%;
   display: flex;
@@ -187,17 +254,17 @@ li {
 
 @media screen and (max-width: 1280px) {
   .page-footer {
-    padding: 60px 40px !important;
+    padding: 60px 40px;
   }
   .footer-contacts-addres__wrapper,
   .footer-contacts-tel__wrapper,
   .footer-contacts-mail__wrapper {
-    height: 200px !important;
+    height: 150px;
   }
 }
 @media screen and (max-width: 1024px) {
   .page-footer {
-    padding: 40px 8px !important;
+    padding: 40px 8px;
   }
   .footer-contacts__wrapper {
     flex-direction: column;
@@ -209,7 +276,7 @@ li {
   .footer-contacts-addres__wrapper,
   .footer-contacts-tel__wrapper,
   .footer-contacts-mail__wrapper {
-    height: 150px !important;
+    height: 130px;
   }
   .addres-title,
   .tel-title,
@@ -230,7 +297,7 @@ li {
   .mail-links__wrapper .addres-link-item .addres-link,
   .tel-links__wrapper .addres-link-item .addres-link,
   .addres-links__wrapper .addres-link-item .addres-link {
-    font-size: 16px !important;
+    font-size: 16px;
   }
   .mail-links__wrapper .mail-link,
   .mail-links__wrapper .addres-link,
@@ -241,79 +308,13 @@ li {
   .addres-links__wrapper .mail-link,
   .addres-links__wrapper .addres-link,
   .addres-links__wrapper .tel-link {
-    font-size: 16px !important;
+    font-size: 16px;
   }
   .mail-links__wrapper .addres-link,
   .tel-links__wrapper .addres-link,
   .addres-links__wrapper .addres-link {
-    text-align: center !important;
+    text-align: center;
   }
-}
-.page-footer {
-  max-width: 1440px;
-  min-width: 320px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 60px 80px;
-  gap: 40px;
-}
-
-.footer-contacts__wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-}
-
-.footer-logo__wrapper {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.footer-contacts-addres__wrapper,
-.footer-contacts-tel__wrapper,
-.footer-contacts-mail__wrapper {
-  max-width: 320px;
-  min-width: 300px;
-  width: 100%;
-  min-height: auto;
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  gap: 20px;
-  background-color: var(--main-bg-color);
-  border-radius: 10px;
-  padding: 10px 20px;
-}
-.footer-contacts-addres__wrapper .addres-title,
-.footer-contacts-addres__wrapper .tel-title,
-.footer-contacts-addres__wrapper .mail-title,
-.footer-contacts-tel__wrapper .addres-title,
-.footer-contacts-tel__wrapper .tel-title,
-.footer-contacts-tel__wrapper .mail-title,
-.footer-contacts-mail__wrapper .addres-title,
-.footer-contacts-mail__wrapper .tel-title,
-.footer-contacts-mail__wrapper .mail-title {
-  width: 100%;
-  width: 100%;
-  text-align: start;
-  font-family: "Comfortaa", sans-serif;
-  font-size: 28px;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: 1px;
-  color: #ffffff;
-  font-optical-sizing: auto;
 }
 
 /*# sourceMappingURL=footer.css.map */

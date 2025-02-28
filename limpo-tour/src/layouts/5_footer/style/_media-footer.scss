@@ -1,18 +1,18 @@
 @media screen and (max-width: 1280px) {
   .page-footer {
-    padding: 60px 40px !important;
+    padding: 60px 40px;
   }
 
   .footer-contacts-addres__wrapper,
   .footer-contacts-tel__wrapper,
   .footer-contacts-mail__wrapper {
-    height: 200px !important;
+    height: 150px;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .page-footer {
-    padding: 40px 8px !important;
+    padding: 40px 8px;
   }
 
   .footer-contacts__wrapper {
@@ -26,7 +26,7 @@
   .footer-contacts-addres__wrapper,
   .footer-contacts-tel__wrapper,
   .footer-contacts-mail__wrapper {
-    height: 150px !important;
+    height: 130px;
   }
 
   .addres-title,
@@ -45,18 +45,18 @@
       display: flex;
 
       .addres-link {
-        font-size: 16px !important;
+        font-size: 16px;
       }
     }
 
     .mail-link,
     .addres-link,
     .tel-link {
-      font-size: 16px !important;
+      font-size: 16px;
     }
 
     .addres-link {
-      text-align: center !important;
+      text-align: center;
     }
   }
 }

@@ -2,21 +2,20 @@
 
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
   .main-intro-form {
-    padding: 20px 40px 60px 40px !important;
+    padding: 20px 40px 60px 40px;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .main-intro-form {
-    padding: 10px 8px 60px 8px !important;
-    gap: 100px !important;
+    padding: 10px 8px 60px 8px;
+    gap: 100px;
   }
 }
 
-
 @media screen and (max-width: 768px) {
   .main-intro-form {
-    gap: 60px !important;
+    gap: 60px;
   }
   //* intro form  title and subtitle media styles
   .intro-form-title {
@@ -57,12 +56,11 @@
   }
 }
 
-
 @media screen and (max-width: 465px) {
   .main-intro-form {
-    gap: 20px !important;
+    gap: 20px;
   }
-  
+
   .intro-form {
     width: 70%;
     flex-direction: column;
@@ -72,7 +70,7 @@
     width: 100%;
 
     .intro-form-input {
-        width: 100%;
+      width: 100%;
     }
   }
 }

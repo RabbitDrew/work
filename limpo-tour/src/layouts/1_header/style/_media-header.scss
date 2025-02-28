@@ -1,7 +1,7 @@
 // TODO solve problem with derective
 @media screen and (min-width: 1025px) and (max-width: 1280px) {
   .page-header {
-    padding: 10px 40px !important;
+    padding: 10px 40px;
   }
 
   .page-header__wrapper {
@@ -23,7 +23,7 @@
 
 @media screen and (max-width: 1024px) {
   .page-header {
-    padding: 10px 8px !important;
+    padding: 10px 8px;
     gap: 5px;
   }
 
@@ -51,17 +51,17 @@
   }
 
   .nav-item {
-    padding: 6px 6px !important;
+    padding: 6px 6px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .page-header {
-    padding: 5px 8px !important;
+    padding: 5px 8px;
   }
 
   .page-header__wrapper {
-    display: none !important;
+    display: none;
   }
   .header-contacts {
     display: none;
@@ -73,7 +73,7 @@
 
 @media screen and (max-width: 465px) {
   .logo-link-img {
-    width: 50px !important;
-    height: 50px !important;
+    width: 50px;
+    height: 50px;
   }
 }

@@ -1,2 +1,2 @@
-import './style/intro--main-section-style.css'
+import './style/intro.css'
 

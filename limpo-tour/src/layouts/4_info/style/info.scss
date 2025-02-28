@@ -1,58 +1,6 @@
 @use "../../0_page//style/common.scss" as *;
+@use './info-main';
 @use "./news";
 @use "./forecast";
 @use "./reviews";
 @use './media-info';
-
-.main-info {
-  width: 100%;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-
-  gap: 20px;
-
-  padding: 60px 80px;
-
-  position: relative;
-}
-
-.main-info::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-
-  background-image: url(../../../assets/info/intro-bg2.png);
-  background-repeat: no-repeat;
-  background-size: 1445px;
-  background-position: bottom;
-
-  opacity: 0.3;
-}
-
-.info__wrapper {
-  max-width: 380px;
-  min-width: 320px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  gap: 20px;
-
-  z-index: 2;
-
-  .info-title {
-    width: 100%;
-    text-align: start;
-    @include fontStyle(28px, "Comfortaa", 400, 1px, #ffffff);
-    font-optical-sizing: auto;
-    padding: 0 0 0 5px;
-  }
-}

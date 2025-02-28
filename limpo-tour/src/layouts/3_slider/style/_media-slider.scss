@@ -1,6 +1,6 @@
 @media screen and (max-width: 1024px) {
   .main-slider {
-    padding: 40px 8px !important;
+    padding: 40px 8px;
   }
 
   .slider-newsletter {
@@ -15,38 +15,45 @@
     align-items: center;
   }
 
-  .slider-title-btn {
-    font-size: 21px !important;
+  .slider-title-btn__wrapper {
+    .slider-title-btn {
+      font-size: 21px;
+    }
   }
 
-  .card-title {
-    font-size: 21px !important;
+  .expo-card {
+    .card-title__wrapper {
+      .card-title {
+        font-size: 21px;
+      }
+
+      .card-star {
+        font-size: 16px;
+      }
+      .card-star-svg {
+        fill: #181c29;
+        transition: fill 0.5s ease-in-out;
+      }
+      .card-subtitle {
+        font-size: 16px;
+      }
+    }
   }
 
-  .card-star {
-    font-size: 16px !important;
-  }
-  .card-star-svg {
-    fill: #181c29;
-    transition: fill 0.5s ease-in-out;
-  }
-
-  .card-subtitle {
-    font-size: 16px !important;
-  }
-  
   .newsletter-input-title,
   .newsletter-input-subtitle {
-    font-size: 21px !important;
+    font-size: 21px;
   }
 
   .input-field::placeholder {
     font-size: 16px;
-   }
+  }
 
   .newsletter-input-btn__wrapper {
-    .newsletter-input-btn-title {
-      font-size: 16px !important;
+    .newsletter-input-btn {
+      .newsletter-input-btn-title {
+        font-size: 16px !important; //TODO solve problem with important derective
+      }
     }
   }
 }
@@ -79,12 +86,10 @@
       align-items: center;
     }
   }
-
-
 }
 
 @media screen and (max-width: 380px) {
   .main-slider {
-    padding: 20px 8px !important;
+    padding: 20px 8px;
   }
 }
