@@ -1,25 +1,26 @@
 import "./style/header.css";
 import ElementCreator from "../../components/global/utils/0_element-creator";
-import listItesData from "../../components/global/data/0_list-item-data";
-import svgCreator from "./svg-creator";
+import listItemsData from "./0_1_list-header-item-data";
+import svgCreator from "./0_2_svg-creator";
 
 class Header extends ElementCreator {
     constructor (listItemsData, svgCreator) {
       super()
       this.page = super.getParentElement(".page");
-      this.listItemsTitles = listItemsData.navItemsTitles //titles 
+      this.titleList = listItemsData.navItemsTitles //titles 
       this.svgList = svgCreator() // svg element
-      console.log(this.svgList)
     }
   // create main header block
   createHeader() {
     const header = super.createElement("header", "page-header");
     const headerLogo = this.headerLogo()
           super.renderElement(header, headerLogo)
-    const headerNav = this.headerNav(this.listItemsTitles)
+    const headerNav = this.headerNav(this.titleList)
           super.renderElement(header, headerNav)
-    const headerContacts = this.headerContacts(this.svgList)
+    const headerContacts = this.headerContacts(this.svgList, 'header-contacts')
           super.renderElement(header, headerContacts)
+    const headerAdoptMenuBtn = this.headerAdoptMenuBtn()
+          super.renderElement(header, headerAdoptMenuBtn)
     super.renderElement(this.page, header)
   }
   // header logo block
@@ -50,8 +51,8 @@ class Header extends ElementCreator {
     return navWrapper
   }
   //header contacts
-  headerContacts (svgList) {
-    const headerContacts = super.createElement('ul', 'header-contacts')
+  headerContacts (svgList, className) {
+    const headerContacts = super.createElement('ul', className)
     svgList.forEach(svg => {
       const contactsItem = super.createElement('li', 'contacts-item')
       super.renderElement(contactsItem, svg)
@@ -59,8 +60,26 @@ class Header extends ElementCreator {
     })
     return headerContacts
   }
+  //header adopt menu btn
+  headerAdoptMenuBtn () {
+    const clasessArr = [
+      'modal-btn-line line-one--rotate line-one--rotate-reset', 
+      "modal-btn-line line-two--hide line-two--show",
+      "modal-btn-line line-three--rotate  line-three--rotate-reset"
+    ]
+    const btnWrapper = super.createElement('div', 'page-header-modal-btn__wrapper')
+    const btn = super.createElement('ul', 'modal-btn__wrapper')
+    clasessArr.forEach(selectorName => {
+      const line = super.createElement('li', selectorName)
+            super.renderElement(btn, line)
+    })
+          super.renderElement(btnWrapper, btn)
+    return btnWrapper
+  }
 
 }
 
-const header = new Header(listItesData, svgCreator)
+const header = new Header(listItemsData, svgCreator)
 header.createHeader()
+export default Header
+
